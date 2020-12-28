@@ -1,0 +1,11 @@
+{
+  "mysql": {
+    "db": "dbname",
+    "user": "dbuser",
+    "password": "dbpassword",
+    "host": "localhost"
+  },
+  "api": {
+    "port": 3000
+  }
+}
