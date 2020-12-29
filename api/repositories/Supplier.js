@@ -1,4 +1,4 @@
-const Supplier = require("../db/tables/Supplier");
+const Supplier = require("../db/tables/Suppliers");
 
 module.exports = {
   index() {

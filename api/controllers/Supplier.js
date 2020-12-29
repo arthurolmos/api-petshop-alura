@@ -69,7 +69,7 @@ module.exports = {
 
       const supplier = new Supplier({ id });
 
-      await supplier.load();
+      await supplier.findById();
 
       await supplier.delete();
 

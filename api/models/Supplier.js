@@ -1,7 +1,6 @@
 const repo = require("../repositories/Supplier");
 const NotFound = require("../errors/NotFound");
 const InvalidField = require("../errors/InvalidField");
-const DataNotProvided = require("../errors/DataNotProvided");
 
 class Supplier {
   constructor({ id, company, email, category, createdAt, updatedAt, version }) {
@@ -20,14 +19,13 @@ class Supplier {
 
       return results;
     } catch (err) {
-      W;
       return err;
     }
   }
 
   async findById() {
     const result = await repo.findById(this.id);
-    if (!result) throw new NotFound();
+    if (!result) throw new NotFound("Fornecedor");
 
     return result;
   }
